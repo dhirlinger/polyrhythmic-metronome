@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* v2 repsonsive */
+
+/*Wordpress Issues*/
+
+.page-template-template-polyrhythmic-metronome .off-canvas-content {
+    background: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #1e2227;
+}
+
+#main-wrapper {
+    border: 1px dashed;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 360px;
+    min-width: 320px;
+    float: left;
+}
+
+#metro {
+    background-color: #1e2227;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 100%;
+    color: #fff;
+    line-height: normal;
+    touch-action: pan-y;
+}
+
+#metro .title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+#tempo {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.bpm {
+    font-size: 12px;
+    text-align: center;
+}
+
+.play-button {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    position: relative;
+    bottom: 68px;
+    left: 86px;
+}
+
+.tempo-container {
+    margin: 0 15px;
+}
+
+#metro button {
+    padding: 6px;
+    border: none;
+    border-radius: 18%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #FF1200;
+    color: #e9e9e9;
+    cursor: pointer;
+}
+
+#metro button:focus {
+    outline: none;
+}
+
+button#play-button {
+    width: 126px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.created-by {
+    margin: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+#metro .created-by a {
+    color: #FF1200;
+}
+
+#metro a {
+    color: #e9e9e9;
+}
+
+#metro a:hover {
+    color: #356161;
+}
+
+#metro label {
+    color: #fff;
+    margin: 0;
+}
+
+.play {
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 30px solid #e9e9e9;
+    margin-left: 6px;
+}
+
+.pause {
+    width: 40px;
+    height: 60px;
+    border: none;
+    border-left: 15px solid #e9e9e9;
+    border-right: 15px solid #e9e9e9;
+}
+
+#main-wrapper #automation-status {
+    visibility: hidden;
+    position: relative;
+    background: #E2FF00;
+    color: #1e2227;
+    width: 100%;
+    height: 26px;
+    margin-bottom: -48px;
+}
+
+#main-wrapper #automation-status p#status {
+    font-size: 14px;
+    text-align: center;
+}
+
+#main-wrapper input.num {
+    margin: 6px auto;
+    width: 96px;
+    padding: 0;
+    position: relative;
+    font-size: 176px;
+    display: block;
+    background: inherit;
+    color: inherit;
+    border: none;
+    letter-spacing: -0.15em;
+}
+
+#main-wrapper input.double-digi {
+    width: 190px;
+}
+
+#main-wrapper  input.num::-webkit-inner-spin-button,
+#main-wrapper  input.num[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#main-wrapper  input.num {
+    -moz-appearance: textfield;
+}
+
+#main-wrapper  input#tempo::-webkit-inner-spin-button,
+#main-wrapper  input#tempo[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: auto;
+}
+
+#main-wrapper  input#tempo::-webkit-inner-spin-button {
+    cursor: pointer;
+}
+
+#main-wrapper  input#tempo {
+    -moz-appearance: auto;
+    
+}
+
+#main-wrapper #top-num {
+    bottom: -64px;
+    margin-top: -16px;
+    height: 220px;
+}
+
+#main-wrapper #bot-num {
+    height: 200px;
+}
+
+#main-wrapper input#tempo {
+    display: inline;
+    font-size: 34px;
+    line-height: 1;
+    width: 84px;
+    padding: 0;
+    margin: 0;
+    background: inherit;
+    color: #fff;
+    position: relative;
+    border: none;
+}
+
+#metro #main-wrapper label[for=tempo] {
+    display: inline;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 42px;
+    margin-right: 5px;
+}
+
+#main-wrapper hr {
+    margin: 0 auto;
+    border-bottom: 16px solid #fff;
+}
+
+#tempo[type=number]::-webkit-inner-spin-button,
+#tempo[type=number]::-webkit-outer-spin-button {
+    margin-left: 10px;
+}
+
+#main-wrapper p {
+    font-size: 10px;
+    padding: 4px 2px;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+#main-wrapper p#explain {
+    text-align: center;
+}
+
+#main-wrapper #bot-amp {
+    position: relative;
+    top: -60px;
+    width: 100%;
+}
+
+#main-wrapper #bot-amp p.text {
+    position: relative;
+    top: 16px;
+}
+
+#main-wrapper #bot-amp #bot-num-mute {
+    margin-top: 22px;
+}
+
+#main-wrapper #bot-amp #tempo-wrapper {
+    float: right;
+    margin-bottom: 5px;
+}
+
+.amp {
+    padding-top: 0;
+    float: left;
+}
+
+.amp input {
+    transform: scale(1.2);
+}
+
+#top-num-mute {
+    margin-bottom: 0;
+}
+
+#main-wrapper #top-amp {
+    width: 126px;
+}
+
+#main-wrapper #subdivision-amp {
+    margin-top: 20px;
+    float: right;
+}
+
+#main-wrapper #subdivision-amp input{
+    margin-bottom: 0;
+}
+
+#top-num-vol,
+#bot-num-vol {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+#metro #automation {
+    position: relative;
+    top: -50px;
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    min-width: 320px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#metro #automation .vl {
+    border-left: 1px solid;
+    height: 20px;
+    display: inline;
+    margin: 3px;
+  }
+
+  #automation p {
+    padding: 4px 2px;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+#automation #title{
+    text-align: center;
+    border: 1px dashed;
+}
+
+#automation #a-panel {
+    padding: 5px;
+    border: 1px dashed;
+    margin-top: 10px;
+    display: none;
+}
+
+#automation #a-panel .auto-box {
+    border: 1px solid;
+    padding: 1px 0;
+    margin: 4px 0;
+    height: 24px;
+    float: left;
+}
+
+#automation #a-panel .box-on-off{
+    width: 58px;
+}
+
+#automation #a-panel .step-on-off{
+line-height: 1.0;
+}
+
+
+#a-panel .step {
+    font-size: .875rem;
+    font-weight: 800;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    float: left;
+}
+
+#a-panel input, #a-panel label {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+#a-panel input[type=number] {
+    width: 32px;
+    height: 18px;
+    font-size: 12px;
+    position: relative;
+    bottom: 3px;
+    background-color: inherit;
+    color: inherit;
+}
+
+#a-panel input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#a-panel input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#a-panel .ratio {
+    width: 2px;
+    display: inline;
+}
+
+.page-template-template-polyrhythmic-metronome .copyright {
+    color: #fff;
+    text-align: center;
+}
